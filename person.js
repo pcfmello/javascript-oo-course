@@ -1,30 +1,47 @@
 function Person() {
-    // public attributes
-    this.name = '';
-    this.age = '';
-    this.eyesColor = '';
-    this.body = '';
-    this.date = getDateNow();
 
-    // private attributes
-    var isActive = true;
+    var name;
+    var age;
+    var active = true;
+    var createdAt = new Date();
 
-    // public functions
-    this.move = function() {
-        console.log('I\'m moving...');
+    this.getName = function() {
+        return name;
     };
 
-    this.say = function() {
-        console.log('Hello!');
+    this.setName = function(_name) {
+        name = _name;
     };
 
-    this.see = function() {
-        console.log('I\'m seeing...');
+    this.getAge = function() {
+        return age;
     };
 
-    // private functions
-    function getDateNow() {
-        return new Date;
+    this.setAge = function(_age) {
+        age = _age;
+    };
+
+    this.isActive = function() {
+        return active;
+    };
+
+    this.getCreatedAt = function() {
+        return createdAt;
+    };
+
+    this.active = function() {
+        active = true;
+    };
+
+    this.inactive = function() {
+        active = false;
+    }
+
+    this.print = function() {
+        console.log('== PERSON =======')
+        console.log('Name: ', name);
+        console.log('Age: ', age);
+        console.log('Is active: ', active ? 'Yes' : 'No');
+        console.log('Created at: ', createdAt.getDate() + '/' + createdAt.getMonth() + '/' + createdAt.getFullYear());
     }
 }
-
