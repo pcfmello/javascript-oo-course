@@ -22,3 +22,10 @@ lucas.toActive();
 peopleList.forEach(function(data) {
     data.print();
 });
+
+console.log('===== BASE FUNCTIONS =====');
+
+console.log('Current year:    ', BaseFunctions.currentYear);
+console.log('PI value:        ', BaseFunctions.pi);
+console.log('Sum two numbers: ', BaseFunctions.sum(35, 20));
+BaseFunctions.printTextInAlert('I constructed some static functions and attributes...');
