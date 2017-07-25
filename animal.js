@@ -9,3 +9,9 @@ Animal.prototype.say = function() {
 Animal.prototype.move = function() {
     console.log('I\'m moving');
 };
+
+Animal.prototype.print = function() {
+    console.log('Name: ', this.name);
+    console.log('Type: ', this.type);
+    console.log('==================================');
+};

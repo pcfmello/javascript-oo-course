@@ -23,9 +23,16 @@ peopleList.forEach(function(data) {
     data.print();
 });
 
-console.log('===== BASE FUNCTIONS =====');
+console.log('===== STATIC BASE FUNCTIONS ATTRIBUTES =====');
 
 console.log('Current year:    ', BaseFunctions.currentYear);
 console.log('PI value:        ', BaseFunctions.pi);
 console.log('Sum two numbers: ', BaseFunctions.sum(35, 20));
 BaseFunctions.printTextInAlert('I constructed some static functions and attributes...');
+
+console.log('===== METHODS OVERRIDE =====');
+var rio = new Animal('jow', 'Dog');
+var jaque = new Person('Jaqueline', 'Pessoa');
+
+rio.print();
+jaque.print();
