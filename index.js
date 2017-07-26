@@ -33,6 +33,12 @@ BaseFunctions.printTextInAlert('I constructed some static functions and attribut
 console.log('===== METHODS OVERRIDE =====');
 var rio = new Animal('jow', 'Dog');
 var jaque = new Person('Jaqueline', 'Pessoa');
-
 rio.print();
 jaque.print();
+
+console.log('===== ABSTRACT CLASS =====');
+var fiatCar = new FiatCar('Palio');
+var renaultCar = new RenaultCar('Logan');
+fiatCar.accelerate();
+renaultCar.accelerate();
+var car = new Car(); // error: cannot be instanced
