@@ -29,3 +29,10 @@ console.log('Current year:    ', BaseFunctions.currentYear);
 console.log('PI value:        ', BaseFunctions.pi);
 console.log('Sum two numbers: ', BaseFunctions.sum(35, 20));
 BaseFunctions.printTextInAlert('I constructed some static functions and attributes...');
+
+console.log('===== ABSTRACT CLASS =====');
+var fiatCar = new FiatCar('Palio');
+var renaultCar = new RenaultCar('Logan');
+fiatCar.accelerate();
+renaultCar.accelerate();
+var car = new Car(); // error: cannot be instanced
