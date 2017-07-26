@@ -18,10 +18,12 @@ Person.prototype.toInactive = function() {
     this.active = false;
 };
 
+// Method override
 Person.prototype.print = function() {
     console.log('Name:      ', this.name);
     console.log('Type:      ', this.type);
     console.log('Is Active: ', this.isActive());
     console.log(this.say());
     console.log(this.move());
+    console.log('==================================');
 };
