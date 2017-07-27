@@ -9,6 +9,5 @@ FiatCar.prototype.toInstanceCar = function() {
         var car = new Car();
     } catch(error) {
         console.error('Car class cannot be instance');
-        throw error;
     }
 };
