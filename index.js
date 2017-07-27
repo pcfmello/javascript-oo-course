@@ -41,4 +41,6 @@ var fiatCar = new FiatCar('Palio');
 var renaultCar = new RenaultCar('Logan');
 fiatCar.accelerate();
 renaultCar.accelerate();
+fiatCar.toInstanceCar();
+console.log('continue to execute');
 var car = new Car(); // error: cannot be instanced
